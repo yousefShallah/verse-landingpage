@@ -1,0 +1,120 @@
+.about-header{
+    background: #020C1E;
+}
+.about-page-sections{
+    background: #020C1E;
+    padding: 3rem 10rem;
+    position: relative;
+}
+.about-header-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .about-header-body img{
+    width: 100%;
+} */
+.about-header-body .about-desc-header{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+.about-header-body .about-desc-header h1{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.about-header-body .about-desc-header h1 span{
+    margin-left: 15px;
+    margin-top: -100px !important;
+    display: block;
+}
+.about-header-body .about-desc-header h1::before{
+    content: "";
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    background: #AF03AD;
+    border-radius: 100%;
+}
+.about-header-body .about-desc-header h2{
+    margin: 3rem 0rem 2rem;
+    font-weight: bold;
+    font-size: 32px;
+}
+.about-header-body .about-desc-header p{
+    font-size: 16px;
+}
+
+.about-header-body {
+}
+.about-header-body .about-image-header{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.about-header-body .image-header img{
+    width: 90%;
+}
+
+.about-preview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 3rem 0rem 1rem;
+    color: #fff;
+}
+
+.about-text{
+    width: 50%;
+}
+.about-text p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.about-image{
+    position: relative;
+    width: 50%;
+    width: 350px;
+    height: 350px;
+}
+.about-bg {
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+}
+.about-bg {
+    width: 345px;
+    height: 345px;
+}
+
+@media screen and (max-width: 680px) {
+    .about-page-sections{
+        padding: 3rem 1rem;
+    }
+    .about-header-body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-header-body .about-desc-header{
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-preview{
+        flex-direction: column;
+    }
+    .about-text, .about-image{
+        width: 100%;
+        text-align: center;
+    }
+}
