@@ -172,12 +172,14 @@
     font-size: 40px;
 }
 /* features section */
-
+.contact-details p:not(:first-child){
+    margin-top: 58px !important;
+}
 .features-section{
     width: 100%;
     background-image: url("./images/features-bg.png");
     background-size: cover;
-    height: 990px;
+    height: 950px;
     background-position: center; 
     background-repeat: no-repeat; 
     display: flex;
@@ -430,7 +432,8 @@
     justify-content: center;
     align-items: center;
 }
-.footer-desc{
+.footer-container p, .footer-container span {
+    font-size: 16px;
 }
 .mobile-nav-icon{
     background: #fff !important;
@@ -454,12 +457,13 @@
     }
     .header-body{
         flex-direction: column;
-        padding: 1rem ;
+        padding: 3rem 1rem ;
         text-align: center;
         justify-content: flex-start;
+
     }
     .desc-header{
-        width: 100% !important;
+        width: 350px !important;
         align-items: center !important;
         padding-top: 1rem;
     }
@@ -487,9 +491,10 @@
         align-items: center;
     }
     .about-section .title h1{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         text-align: center;
-        font-size: 40px;
+        font-size: 32px;
+        margin-top: 5rem;
     }
     /* feature */
     .feature-art{
@@ -505,8 +510,8 @@
         grid-template-columns: auto;
     }
     .feature-item{
-        width: auto;
-        height: auto;
+        width: 350px;
+        height: 320px;
         padding: 2rem 1rem 1rem;
         margin: 1rem 0rem;
     }
@@ -522,6 +527,7 @@
     }
     .team-item{
         height: 400px;
+        width: 350px;
     }
     .teams-container .title h1{
         text-align: center;
@@ -557,5 +563,41 @@
     .footer-desc{
         text-align: center;
         width: 80%;
+    }
+    .text-box, .text-body{
+        width: 350px;
+    }
+    .contact-form input {
+        width: 350px;
+    }
+    .contact-form textarea{
+        width: 350px;
+    }
+    .about-section-desc {
+        width: 350px;
+        height: 480px;
+    }
+    .header-bg-img{
+        height: 700px;
+        top: 4rem;
+    }
+    .breakpages{
+        margin-bottom: 3rem;
+    }
+    .header-body .desc-header h1::before{
+        width: 0px;
+        height: 0px;
+    }
+    .fqa-section {
+        padding: 4rem 0rem;
+    }
+    .fqa-image img{
+        width: 300px;
+    }
+    .header-body .image-header img{
+        width: 350px;
+    }
+    .about-section-desc{
+        padding: 1rem;
     }
 }
